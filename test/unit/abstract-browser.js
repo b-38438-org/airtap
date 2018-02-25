@@ -12,12 +12,9 @@ function suite (name, Browser) {
   })
 
   test(`${name} takes options`, function (t) {
-    const b1 = new Browser({ control_port: 1234 })
-    const b2 = new Browser()
+    const browser = new Browser({ control_port: 1234 })
 
-    t.same(b1._opt, { control_port: 1234 })
-    t.same(b2._opt, {})
-
+    t.is(browser._opt.control_port, 1234)
     t.end()
   })
 }

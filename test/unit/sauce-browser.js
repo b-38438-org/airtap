@@ -7,7 +7,7 @@ const abstractSuite = require('./abstract-browser')
 abstractSuite('SauceBrowser', SauceBrowser)
 
 test('SauceBrowser toString', function (t) {
-  const browser = new SauceBrowser({}, {
+  const browser = new SauceBrowser({
     browser: 'chrome',
     version: '64',
     platform: 'Linux'

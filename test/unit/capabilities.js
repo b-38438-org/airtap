@@ -23,6 +23,8 @@ test('capabilities config', function (t) {
   })
 
   var browser = zuul._browsers[0]
-  t.same(browser._conf.capabilities, config.capabilities)
+
+  // TODO: test that capabilities are set in initOpts
+  t.same(browser._opt.capabilities, config.capabilities)
   t.end()
 })
