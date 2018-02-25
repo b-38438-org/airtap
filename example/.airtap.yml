@@ -1,4 +1,4 @@
-name: example
+project: example
 browsers:
   - name: firefox
     platform: linux

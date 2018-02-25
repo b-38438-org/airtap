@@ -102,7 +102,7 @@ if (program.listBrowsers) {
     pkg = require(process.cwd() + '/package.json')
   } catch (err) {}
 
-  config.name = config.name || pkg.name || 'airtap'
+  config.project = config.project || pkg.name || 'airtap'
 
   if (config.builder) {
     // relative path will needs to be under project dir
