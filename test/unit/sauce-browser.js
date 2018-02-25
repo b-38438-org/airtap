@@ -8,7 +8,7 @@ abstractSuite('SauceBrowser', SauceBrowser)
 
 test('SauceBrowser toString', function (t) {
   const browser = new SauceBrowser({
-    browser: 'chrome',
+    name: 'chrome',
     version: '64',
     platform: 'Linux'
   })
