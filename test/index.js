@@ -1,5 +1,6 @@
 require('./integration/tape-sauce')
 require('./integration/tape-phantom')
+require('./integration/tape-electron')
 require('./unit/aggregate-browsers')
 require('./unit/browserify-builder')
 require('./unit/capabilities')
